@@ -20,3 +20,13 @@ export OPENAI_API_KEY="YOUR_KEY_HERE"
 ```
 python get_answers.py
 ```
+
+### Options
+
+Use `--role` to give the AI more context. By default, it acts as a Professional DevOps Engineer with expert level Prometheus and Kube Prometheus Stack knowledge. 
+
+```
+python get_answers.py --role "Python FastAPI expert"
+```
+
+Run `--help` to get all options, defaults and descriptions. 

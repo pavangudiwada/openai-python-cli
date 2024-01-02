@@ -10,7 +10,7 @@ client = OpenAI()
 
 @app.command()
 def get_answer(
-    context: str = typer.Option("Professional DevOps Enginner with expert level prometheus and Kube Prometheus Stack knowledge",  help="Context for the conversation")
+    role: str = typer.Option("Professional DevOps Engineer with expert level Prometheus and Kube Prometheus Stack knowledge",  help="AI context for the conversation")
 ):
 
 
@@ -18,7 +18,7 @@ def get_answer(
     messages = [
         {
             "role": "system",
-            "content": context,
+            "content": role,
         },
         {
             "role": "user",
@@ -28,7 +28,7 @@ def get_answer(
 
     chat_completion = client.chat.completions.create(
         messages=messages,
-        model="gpt-3.5-turbo",
+        model="gpt-4",
     )
 
     typer.echo(f"OpenAI Response: {chat_completion.choices[0].message.content}")
