@@ -18,7 +18,7 @@ export OPENAI_API_KEY="YOUR_KEY_HERE"
 ```
 4. Run the app
 ```
-python get_answers.py
+python file.py
 ```
 
 ### Options
@@ -30,3 +30,10 @@ python get_answers.py --role "Python FastAPI expert"
 ```
 
 Run `--help` to get all options, defaults and descriptions. 
+
+## PromQL expression generator
+
+Modify `content` and run 
+```
+python prometheus_call.py
+```
