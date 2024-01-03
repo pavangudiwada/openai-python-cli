@@ -29,13 +29,14 @@ tools=[
             "parameters": {
                 "type": "object",
                 "properties": {
-                    "topic": {
+                    "topics": {
                         "type": "string",
                         "description": "List of the top 5 projects "
                     }
                 },
-                "required": ["topic"]
+                "required": ["topics"]
             },
+
     }
 
     }
@@ -50,8 +51,6 @@ completion = client.chat.completions.create(
     tool_choice="auto",
 
 )
-
-print(completion)
 
 reply_content = completion.choices[0].message
 print(reply_content)
