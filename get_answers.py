@@ -1,3 +1,5 @@
+# You will be prompted to enter a query and a response will be displayed in the terminal itself.
+
 import os
 from openai import OpenAI
 import typer

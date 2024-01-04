@@ -1,3 +1,5 @@
+# Takes a query and generates a PromQL expression. Works sometimes.
+
 import os
 from openai import OpenAI
 import json

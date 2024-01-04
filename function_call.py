@@ -1,3 +1,5 @@
+# Simple function to extract specific information in your input
+
 import os
 from openai import OpenAI
 import json
